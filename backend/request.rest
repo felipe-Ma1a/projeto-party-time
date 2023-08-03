@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+      "name": "Barman",
+      "description": "Equipe com barman para servir drinks criativos aos convidados.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1616781434243-b972f0c687b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64c91208cd5c013d34f2d924
+
+###
+DELETE http://localhost:3000/api/services/64c91208cd5c013d34f2d924
+
+###
+PUT http://localhost:3000/api/services/64c915103bcfdad742f35029
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Felipe",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64ca471de1a4d973c0ee9d95
+
+###
+DELETE http://localhost:3000/api/parties/64ca471de1a4d973c0ee9d95
+
+###
+PUT http://localhost:3000/api/parties/64ca47bce1a4d973c0ee9d97
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Felipe",
+    "description": "Uma festa de aniversário",
+    "budget": 10000,
+    "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://chumbogrossomanaus.com.br/wp-content/uploads/2022/06/unnamed-1-2.jpg"
+        }
+    ]
+}
