@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 
 async function main() {
   try {
-    await mongoose.connect(
-      "mongodb+srv://felipe:ngVItEXBqf4zD5p3@cluster0.v7y5uvc.mongodb.net/?retryWrites=true&w=majority"
-    );
+    await mongoose.connect(process.env.MONGO_CONNECTION);
 
     console.log("Conectado ao banco!");
   } catch (error) {
