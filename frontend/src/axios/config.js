@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const partyFetch = axios.create({
-  baseURL: "https://party-time-back.vercel.app/api/",
+  baseURL: "https://party-time-back.vercel.app",
   headers: {
     "Content-Type": "application/json",
   },
